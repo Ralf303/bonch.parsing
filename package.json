@@ -1,0 +1,23 @@
+{
+  "name": "bonchparser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/app.js",
+    "build": "tsc",
+    "dev": "nodemon -e ts --watch src .env --exec \"tsc --incremental && node dist/app.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.6.1",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "cron": "^3.1.7",
+    "dotenv": "^16.4.5"
+  }
+}
