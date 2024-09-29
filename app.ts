@@ -1,7 +1,7 @@
 import { CronJob } from "cron";
 import { start } from "./src";
 
-const job = new CronJob("0 */5 * * * *", async () => {
+const job = new CronJob("*/5 10-17 * * 1-6", async () => {
   await start();
 });
 
